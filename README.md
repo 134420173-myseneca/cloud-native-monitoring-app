@@ -8,7 +8,7 @@
 Clone the code from the repository:
 
 ```
-git clone <repository_url>
+git clone https://github.com/134420173-myseneca/cloud-native-monitoring-app.git
 ```
 
 ### **Step 2: Install dependencies**
