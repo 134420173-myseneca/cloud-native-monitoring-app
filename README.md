@@ -100,6 +100,15 @@ response = ecr_client.create_repository(repositoryName=repository_name)
 repository_uri = response['repository']['repositoryUri']
 print(repository_uri)
 ```
+or
+
+##### Create an ECR repository manually with below command
+
+```
+# Replace 'my-ecr-repo' with your desired repository name
+aws ecr create-repository --repository-name my-ecr-repo
+
+```
 
 ### **Step 2: Push the Docker image to ECR**
 
