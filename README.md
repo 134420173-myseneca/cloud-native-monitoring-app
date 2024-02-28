@@ -26,5 +26,5 @@ To run the application, navigate to the root directory of the project and execut
 ```
 python3 app.py
 ```
-
+if running app on  cloud9 aws instance open port in security group for cloud instance and tru to access app with cloud9 instance public ip with port 50000 e.g http://34.207.216.95/:5000
 This will start the Flask server on **`localhost:5000`**. Navigate to [http://localhost:5000/](http://localhost:5000/) on your browser to access the application.
