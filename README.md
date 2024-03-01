@@ -247,4 +247,4 @@ voclabs:~/environment/cloud-native-monitoring-app (main) $ kubectl get pods
 NAME                            READY   STATUS    RESTARTS   AGE
 my-flask-app-7fdf956447-q7scz   1/1     Running   0          10m
 ```
-Access the application through browser  https://3.81.92.209:30076
+Access the application through browser with nodeport 30076 https://3.81.92.209:30076  or  https://xxinstance_ipxx:xxnodeportxx
