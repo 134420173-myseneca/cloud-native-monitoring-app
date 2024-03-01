@@ -242,4 +242,6 @@ Retrieves information about the nodes in the Kubernetes cluster
 ```bash
 kubectl get pods
 ```
-
+voclabs:~/environment/cloud-native-monitoring-app (main) $ kubectl get pods
+NAME                            READY   STATUS    RESTARTS   AGE
+my-flask-app-7fdf956447-q7scz   1/1     Running   0          10m
