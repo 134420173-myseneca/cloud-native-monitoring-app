@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-flask-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-flask-app
+  template:
+    metadata:
+      labels:
+        app: my-flask-app
+    spec:
+      containers:
+      - name: my-flask-container
+        image: 063129952770.dkr.ecr.us-east-1.amazonaws.com/my_monitoring_app_image:latest
+        ports:
+        - containerPort: 5000
