@@ -67,7 +67,7 @@ CMD ["flask", "run"]
 To build the Docker image, execute the following command:
 
 ```
-docker build -t <image_name> .
+docker build -t my-flask-app .
 ```
 
 ### **Step 3: Run the Docker container**
@@ -75,7 +75,7 @@ docker build -t <image_name> .
 To run the Docker container, execute the following command:
 
 ```
-docker run -p 5000:5000 <image_name>
+docker run -p 5000:5000 my-flask-app
 ```
 
 This will start the Flask server in a Docker container on **`localhost:5000`**. Navigate to [http://localhost:5000/](http://localhost:5000/) on your browser to access the application.
