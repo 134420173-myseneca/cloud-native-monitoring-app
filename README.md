@@ -220,3 +220,26 @@ Once your pod is up and running, run the port-forward to expose the service
 ```bash
 kubectl port-forward service/<service_name> 5000:5000
 ```
+## **Part 5: Optional Creating kubernetes cluster with kind and deploying the app using deployment and service yaml files**
+
+change permission for init_kind.sh and excute script to create kubenetes cluster with kind
+
+```bash
+chmod +x init_kind.sh
+./init_kind.sh
+```
+This command applies the configuration defined in the deployment.yaml file to Kubernetes. 
+
+
+```bash
+kubectl apply -f deployment.yaml
+```
+This command applies the configuration defined in the nodeservice.yaml file to Kubernetes.
+```bash
+kubectl apply -f nodeservice.yaml
+```
+Retrieves information about the nodes in the Kubernetes cluster
+```bash
+kubectl get pods
+```
+
